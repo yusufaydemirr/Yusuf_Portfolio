@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Indie+Flower&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 100px;
+  background-color:white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #075985;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  gap: 230px;
+}
+
+.nav-links a {
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: none;
+  color: #082f49;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  transform: scale(2.05);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  padding-top: 80px;
+  background-color: white;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  background-color: white;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 200px;
+  font-size: 0.9rem;
+}
+
+.avatar {
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  margin-top: 50px;
+  box-shadow: 0px 5px 10px 0px #f0f9ff, /* Alt gölge */ 0px 5px 10px 0px #082f49;
+}
+
+.hero h1 {
+  font-size: 80px;
+  color:#082f49;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+}
+
+.hero p {
+  max-width: 600px;
+  color:#082f49;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* About Section */
+.about {
+  padding: 50px 200px;
+  background-color: white;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  height: 100vh;
+  padding: 5rem 10%;
+  text-align: center;
+  background-color: white;
+}
+
+.skills h2 {
+  color: transparent;
+  font-size: 30px;
+  cursor: default;
+}
+
+.skills h3 {
+  color: #082f49;
+  font-size: 20px;
+}
+.skills p {
+  color: #082f49;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin-top: 60px;
+}
+
+.skill-card {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(51, 51, 51, 0.3);
+  transition: all 0.5s ease #082f49;
+
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Projects Section */
+.projects {
+  height: 100vh;
+  padding: 5rem 10%;
+  background-color: white;
+  text-align: center;
+}
+.projects-div {
+  margin-top: 80px;
+}
+.projects-div h2 {
+  color: transparent;
+  cursor: default;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 8rem;
+  margin-top: 1px;
+  margin-right: 80px;
+}
+
+.project-card {
+  width: 500px;
+  background-color:white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(51, 51, 51, 0.3);
+  color:#082f49;
+  
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+.project-info p {
+  text-align: justify;
+}
+
+/* Contact Section */
+.contact {
+  height: 100vh;
+  padding: 5rem 10%;
+  text-align: center;
+  background-color:white;
+}
+
+.contact svg {
+  fill:#082f49;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact svg:hover {
+  transform: scale(1.05);
+}
+.second {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact h2 {
+  color: transparent;
+  cursor: default;
+
+  margin-bottom: 80px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #111;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.rights-text {
+  text-align: center;
+  margin-top: 36px;
+  color: #082f49;
+}
